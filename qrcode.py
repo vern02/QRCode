@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import streamlit as st
 import joblib
+import os
 
 # Load the phishing detection model using a relative path
 model_path = os.path.join(os.path.dirname(__file__), 'phish_url_model.joblib')
