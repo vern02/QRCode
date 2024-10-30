@@ -4,7 +4,7 @@ import streamlit as st
 import joblib
 
 # Load the phishing detection model
-model = joblib.load('/Users/vernsin/phish_url_model.joblib')
+model = joblib.load('/vern02/QRCode/blob/main/phish_url_model.joblib')
 
 st.title("QR Code Scanner with Phishing Detection")
 
