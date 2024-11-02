@@ -8,7 +8,8 @@ import os
 model_path = os.path.join(os.path.dirname(__file__), 'phish_url_model.joblib')
 model = joblib.load(model_path)
 
-st.title("QR Code Scanner with Phishing Detection")
+st.markdown("<h1 style='text-align: center; color: #FF5733;'>🔍 Phish Up 🚫</h1>", unsafe_allow_html=True)
+st.markdown("--xxxxxxxxxx----------xxxxxxxxxx----------xxxxxxxxxx----------xxxxxxxxxx----------xxxxxxxxxx----------xxxxxxxxxx--")
 
 # Capture QR code from the camera
 image = st.camera_input("Show QR code")
