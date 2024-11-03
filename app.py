@@ -74,7 +74,7 @@ elif selected == 'QR Phishing Detection':
         if data:
             st.write("Scanned Data: ", data)
     
-            prediction = model.predict([data])
+            prediction = model1.predict([data])
 
              # 0 indicates phishing
             if prediction[0] == 0:
