@@ -1,7 +1,8 @@
-streamlit
-opencv-python-headless
+nltk
 numpy
 joblib
+streamlit
 scikit-learn
-nltk
 streamlit-extras
+streamlit_option_menu
+opencv-python-headless
