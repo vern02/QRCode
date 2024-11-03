@@ -8,13 +8,13 @@ from streamlit_option_menu import option_menu
 
 # Load the phishing detection model using a relative path
 model_1 = os.path.join(os.path.dirname(__file__), 'phish_url_model.joblib')
-model_1 = joblib.load(model_1)
+model1 = joblib.load(model_1)
 
 model_2 = os.path.join(os.path.dirname(__file__), 'TfIdf_Vectorizer.joblib')
-model_2 = joblib.load(model_2)
+model2 = joblib.load(model_2)
 
-# model_3 = os.path.join(os.path.dirname(__file__), 'Logistics_Regression_Model.joblib')
-# model_3 = joblib.load(model_3)
+model_3 = os.path.join(os.path.dirname(__file__), 'Logistics_Regression_Model.joblib')
+model3 = joblib.load(model_3)
 
 # # Sidebar Navigation
 # with st.sidebar:
@@ -34,8 +34,8 @@ st.markdown("<h1 style='text-align: center; color: #00FFFF;'>🔍 Phish Up 🔵<
 
 # Function to predict email text
 def predict_email_text(text):
-    text_vectorized = vectorizer_model.transform([text])
-    prediction = logregression_model.predict(text_vectorized)
+    text_vectorized = model2.transform([text])
+    prediction = model3.predict(text_vectorized)
     return prediction
 
 # if selected == 'E-Text Phishing Detection':
