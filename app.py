@@ -10,8 +10,8 @@ from streamlit_option_menu import option_menu
 model_1 = os.path.join(os.path.dirname(__file__), 'phish_url_model.joblib')
 model_1 = joblib.load(model_1)
 
-# tfidf_model = os.path.join(os.path.dirname(__file__), 'TfIdf_Vectorizer.joblib')
-# vectorizer_model = joblib.load(tfidf_model)
+model_2 = os.path.join(os.path.dirname(__file__), 'TfIdf_Vectorizer.joblib')
+model_2 = joblib.load(model_2)
 
 # logreg_model = os.path.join(os.path.dirname(__file__), 'Logistics_Regression_Model.joblib')
 # logregression_model = joblib.load(logreg_model)
