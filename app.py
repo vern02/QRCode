@@ -39,7 +39,7 @@ def predict_email_text(text):
     return prediction
 
 if selected == 'E-Text Phishing Detection':
-    t.title("Email Text Phishing Detection")
+    st.title("Email Text Phishing Detection")
     with st.form("email_form"):
         user_input = st.text_area("Enter an email text to check if it's phishing:")
         submitted = st.form_submit_button("Predict")
