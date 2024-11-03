@@ -30,8 +30,13 @@ with st.sidebar:
             "nav-link-selected": {"font-weight": "bold"}
         }
     )
+
+col1, col2, col3 = st.columns([1, 1, 1])
+
+with col2:
+    st.image("PhishUp_Logo.png")
     
-st.markdown("<h1 style='text-align: center; color: #00FFFF;'>🔍 Phish Up 🔵</h1>", unsafe_allow_html=True)
+# st.markdown("<h1 style='text-align: center; color: #00FFFF;'>🔍 Phish Up 🔵</h1>", unsafe_allow_html=True)
 
 # Function to predict email text
 def predict_email_text(text):
