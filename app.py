@@ -13,8 +13,8 @@ model_1 = joblib.load(model_1)
 model_2 = os.path.join(os.path.dirname(__file__), 'TfIdf_Vectorizer.joblib')
 model_2 = joblib.load(model_2)
 
-model_3 = os.path.join(os.path.dirname(__file__), 'Logistics_Regression_Model.joblib')
-model_3 = joblib.load(model_3)
+# model_3 = os.path.join(os.path.dirname(__file__), 'Logistics_Regression_Model.joblib')
+# model_3 = joblib.load(model_3)
 
 # # Sidebar Navigation
 # with st.sidebar:
