@@ -36,8 +36,6 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     st.image("PhishUp_Logo.png")
     
-# st.markdown("<h1 style='text-align: center; color: #00FFFF;'>🔍 Phish Up 🔵</h1>", unsafe_allow_html=True)
-
 # Function to predict email text
 def predict_email_text(text):
     text_vectorized = model2.transform([text])
@@ -63,6 +61,7 @@ if selected == 'E-Text Phishing Detection':
             st.warning("Please enter a text before predicting.")
             
 elif selected == 'QR Phishing Detection':
+    st.title("QR Phishing Detection")
     # Capture QR code from the camera
     image = st.camera_input("Show QR code")
     
