@@ -7,8 +7,8 @@ from streamlit_extras.let_it_rain import rain
 from streamlit_option_menu import option_menu
 
 # Load the phishing detection model using a relative path
-phish_model = os.path.join(os.path.dirname(__file__), 'phish_url_model.joblib')
-phishing_model = joblib.load(phish_model)
+model_1 = os.path.join(os.path.dirname(__file__), 'phish_url_model.joblib')
+model_1 = joblib.load(model_1)
 
 # tfidf_model = os.path.join(os.path.dirname(__file__), 'TfIdf_Vectorizer.joblib')
 # vectorizer_model = joblib.load(tfidf_model)
