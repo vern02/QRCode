@@ -72,7 +72,7 @@ elif selected == 'QR Phishing Detection':
         data, bbox, straight_qrcode = detector.detectAndDecode(cv2_img)
     
         if data:
-            st.write("Scanned Data: ", data)
+            st.write("URL: ", data)
     
             prediction = model1.predict([data])
 
