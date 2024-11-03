@@ -18,7 +18,6 @@ model2 = joblib.load(model_2)
 model_3 = os.path.join(os.path.dirname(__file__), 'Logistics_Regression_Model.joblib')
 model3 = joblib.load(model_3)
 
-# Sidebar Navigation
 with st.sidebar:
     selected = option_menu(
         "NAVIGATIONS",
@@ -75,11 +74,10 @@ elif selected == 'QR Phishing Detection':
         if data:
             st.write("Scanned Data: ", data)
     
-            # Prepare data for model prediction
-            prediction = model.predict([data])  # Adjust this line if your model requires a specific input format
-            
-            # Display the result
-            if prediction[0] == 0:  # 0 indicates phishing
+            prediction = model.predict([data])
+
+             # 0 indicates phishing
+            if prediction[0] == 0:
                 st.write("Result: **Phishing QR Code**")
             else:
                 st.write("Result: **Safe QR Code**")
