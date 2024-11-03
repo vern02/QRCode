@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 from streamlit_extras.let_it_rain import rain
 from streamlit_option_menu import option_menu
-import sklearn
+# import sklearn
 # sklearn.metrics._scorer._passthrough_scorer = None
 
 # Load the phishing detection model using a relative path
